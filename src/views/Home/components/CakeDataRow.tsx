@@ -54,8 +54,8 @@ const CakeDataRow = () => {
 
   return (
     <Grid>
-      <Flex flexDirection="column">
-        <Text color="textSubtle">{t('Total supply')}</Text>
+     <Flex flexDirection="column">
+        <Text color="blue">{t('Total supply')}</Text>
         {cakeSupply ? (
           <Balance decimals={0} lineHeight="1.1" fontSize="24px" bold value={cakeSupply} />
         ) : (
@@ -63,7 +63,7 @@ const CakeDataRow = () => {
         )}
       </Flex>
       <StyledColumn>
-        <Text color="textSubtle">{t('Burned to date')}</Text>
+        <Text color="blue">{t('Burned to date')}</Text>
         {burnedBalance ? (
           <Balance decimals={0} lineHeight="1.1" fontSize="24px" bold value={burnedBalance} />
         ) : (
@@ -71,7 +71,7 @@ const CakeDataRow = () => {
         )}
       </StyledColumn>
       <StyledColumn noMobileBorder>
-        <Text color="textSubtle">{t('Market cap')}</Text>
+        <Text color="blue">{t('Market cap')}</Text>
         {mcap?.gt(0) && mcapString ? (
           <Heading scale="lg">{t('$%marketCap%', { marketCap: mcapString })}</Heading>
         ) : (
@@ -79,7 +79,7 @@ const CakeDataRow = () => {
         )}
       </StyledColumn>
       <StyledColumn>
-        <Text color="textSubtle">{t('Current emissions')}</Text>
+        <Text color="blue">{t('Current emissions')}</Text>
 
         <Heading scale="lg">{t('%cakeEmissions%/block', { cakeEmissions: emissionsPerBlock })}</Heading>
       </StyledColumn>
