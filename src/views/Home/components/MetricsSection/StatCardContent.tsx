@@ -29,7 +29,7 @@ const StatCardContent: React.FC<{ headingText: string; bodyText: string; highlig
       <Heading color={highlightColor} scale="xl" mb="24px">
         {lastWord}
       </Heading>
-      <Text color="textSubtle">{bodyText}</Text>
+      <Text color="blue">{bodyText}</Text>
     </Flex>
   )
 }
