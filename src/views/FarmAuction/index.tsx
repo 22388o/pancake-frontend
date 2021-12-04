@@ -89,10 +89,10 @@ const FarmAuction = () => {
         <Flex flexDirection={['column-reverse', null, 'row']}>
           <Left>
             <Heading as="h1" scale="xxl" my="24px">
-              {t('Community Farm Auction')}
+              {t('Community Big Farm Auction')}
             </Heading>
             <Text color="textSubtle" mb="24px">
-              {t('Each week, qualifying projects can bid CAKE for the right to host a 7-day Farm on PancakeSwap.')}
+              {t('Each week, qualifying projects can bid BGSP for the right to host a 7-day Farm on BigSwap.')}
             </Text>
             <Text color="textSubtle">{t('This page is for projects to bid for farms.')}</Text>
             <Text color="textSubtle" mb="24px">
