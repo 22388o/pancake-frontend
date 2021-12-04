@@ -49,13 +49,13 @@ const FarmsPoolsRow = () => {
     }
   }, [timer, isLoaded, startTimer])
 
-  const getPoolText = (pool: DeserializedPool) => {
+   const getPoolText = (pool: DeserializedPool) => {
     if (pool.isAutoVault) {
-      return t('Auto CAKE')
+      return t('Auto BGSP')
     }
 
     if (pool.sousId === 0) {
-      return t('Manual CAKE')
+      return t('Manual BGSP')
     }
 
     return t('Stake %stakingSymbol% - Earn %earningSymbol%', {
@@ -68,7 +68,7 @@ const FarmsPoolsRow = () => {
     <div ref={observerRef}>
       <Flex flexDirection="column" mt="24px">
         <Flex mb="24px">
-          <RowHeading text={showFarms ? t('Top Farms') : t('Top Syrup Pools')} />
+          <RowHeading text={showFarms ? t('Top Farms') : t('Top xBGSP Pools')} />
           <IconButton
             variant="text"
             height="100%"
@@ -79,7 +79,7 @@ const FarmsPoolsRow = () => {
               startTimer()
             }}
           >
-            <SwapVertIcon height="24px" width="24px" color="textSubtle" />
+            <SwapVertIcon height="24px" width="24px" color="blue" />
           </IconButton>
         </Flex>
         <Box height={['240px', null, '80px']}>
