@@ -22,7 +22,7 @@ const StyledSubheading = styled(Heading)`
 
 const StyledHeading = styled(Heading)`
   color: #ffffff;
-  background: -webkit-linear-gradient(#7645d9 0%, #452a7a 100%);
+  background: -webkit-linear-gradient(#0000b8 0%, #0000b8 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-stroke: 6px transparent;
@@ -33,7 +33,7 @@ const StyledHeading = styled(Heading)`
 const Wrapper = styled.div`
   border-radius: 32px;
   width: 100%;
-  background-image: linear-gradient(#7645d9, #452a7a);
+  background-image: linear-gradient(#0000b8, #0000b8);
   max-height: max-content;
   overflow: hidden;
 `
@@ -51,7 +51,6 @@ const LeftWrapper = styled(Flex)`
   width: 100%;
   flex-direction: column;
   justify-content: center;
-
   ${({ theme }) => theme.mediaQueries.md} {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -64,12 +63,10 @@ const RightWrapper = styled.div`
   opacity: 0.9;
   transform: translate(0, -50%);
   top: 50%;
-
   & img {
     height: 100%;
     width: 174px;
   }
-
   ${({ theme }) => theme.mediaQueries.sm} {
     position: relative;
     display: flex;
@@ -79,7 +76,6 @@ const RightWrapper = styled.div`
     top: 0;
     transform: unset;
     opacity: 1;
-
     & img {
       height: 130%;
       width: unset;
@@ -95,7 +91,7 @@ const IFOBanner = () => {
       <Inner>
         <LeftWrapper>
           <StyledSubheading>{t('Live')}</StyledSubheading>
-          <StyledHeading scale="xl">SANTOS IFO</StyledHeading>
+          <StyledHeading scale="xl">PORTO IFO</StyledHeading>
           <Link to="/ifo">
             <Button>
               <Text color="invertedContrast" bold fontSize="16px" mr="4px">
@@ -106,7 +102,7 @@ const IFOBanner = () => {
           </Link>
         </LeftWrapper>
         <RightWrapper>
-          <img src="/images/decorations/3d-ifo-santos.png" alt="IFO SANTOS" />
+          <img src="/images/decorations/3d-ifo-porto.png" alt="IFO PORTO" />
         </RightWrapper>
       </Inner>
     </Wrapper>
