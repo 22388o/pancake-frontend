@@ -59,11 +59,11 @@ const ProfilePicture: React.FC = () => {
           {t('Oops!')}
         </Heading>
         <Text bold fontSize="20px" mb="24px">
-          {t('We couldn’t find any Pancake Collectibles in your wallet.')}
+          {t('We couldn’t find any BigSwap Collectibles in your wallet.')}
         </Text>
         <Text as="p">
           {t(
-            'You need a Pancake Collectible to finish setting up your profile. If you sold or transferred your starter collectible to another wallet, you’ll need to get it back or acquire a new one somehow. You can’t make a new starter with this wallet address.',
+            'You need a BigSwap Collectible to finish setting up your profile. If you sold or transferred your starter collectible to another wallet, you’ll need to get it back or acquire a new one somehow. You can’t make a new starter with this wallet address.',
           )}
         </Text>
       </>
