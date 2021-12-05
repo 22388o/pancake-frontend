@@ -83,7 +83,7 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
               {t('Activate your Profile')}
             </Heading>
             <Text color="textSubtle" small mb="16px">
-              {t('You’ll need an active PancakeSwap Profile to take part in an IFO!')}
+              {t('You’ll need an active BigSwap Profile to take part in an IFO!')}
             </Text>
             {renderAccountStatus()}
           </CardBody>
@@ -92,10 +92,10 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
         return (
           <CardBody>
             <Heading as="h4" color="secondary" mb="16px">
-              {t('Get %symbol%', { symbol: 'CAKE' })}
+              {t('Get %symbol%', { symbol: 'BGSP' })}
             </Heading>
             <Text color="textSubtle" small>
-              {t('You’ll spend CAKE to buy IFO sale tokens.')}
+              {t('You’ll spend BGSP to buy IFO sale tokens.')}
             </Text>
             <Button
               as={Link}
@@ -104,7 +104,7 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
               endIcon={<OpenNewIcon color="white" />}
               mt="16px"
             >
-              {t('Get %symbol%', { symbol: 'CAKE' })}
+              {t('Get %symbol%', { symbol: 'BGSP' })}
             </Button>
           </CardBody>
         )
@@ -112,10 +112,10 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
         return (
           <CardBody>
             <Heading as="h4" color="secondary" mb="16px">
-              {t('Commit CAKE')}
+              {t('Commit BGSP')}
             </Heading>
             <Text color="textSubtle" small>
-              {t('When the IFO sales are live, you can “commit” your CAKE to buy the tokens being sold.')} <br />
+              {t('When the IFO sales are live, you can “commit” your BGSP to buy the tokens being sold.')} <br />
               {t('We recommend committing to the Basic Sale first, but you can do both if you like.')}
             </Text>
           </CardBody>
@@ -128,7 +128,7 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
             </Heading>
             <Text color="textSubtle" small>
               {t(
-                'After the IFO sales finish, you can claim any IFO tokens that you bought, and any unspent CAKE tokens will be returned to your wallet.',
+                'After the IFO sales finish, you can claim any IFO tokens that you bought, and any unspent BGSP tokens will be returned to your wallet.',
               )}
             </Text>
           </CardBody>
