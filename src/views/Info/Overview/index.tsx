@@ -108,7 +108,7 @@ const Overview: React.FC = () => {
   return (
     <Page>
       <Heading scale="lg" mb="16px" id="info-overview-title">
-        {t('PancakeSwap Info & Analytics')}
+        {t('BigSwap Info & Analytics')}
       </Heading>
       <ChartCardsContainer>
         <Card>
@@ -153,11 +153,11 @@ const Overview: React.FC = () => {
         </Card>
       </ChartCardsContainer>
       <Heading scale="lg" mt="40px" mb="16px">
-        {t('Top Tokens')}
+        {t('Biggest Tokens')}
       </Heading>
       <TokenTable tokenDatas={formattedTokens} />
       <Heading scale="lg" mt="40px" mb="16px">
-        {t('Top Pools')}
+        {t('Biggest Pools')}
       </Heading>
       <PoolTable poolDatas={poolDatas} loading={somePoolsAreLoading} />
       <Heading scale="lg" mt="40px" mb="16px">
