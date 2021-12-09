@@ -3,7 +3,6 @@ import { darkColors } from "../../../theme";
 import { FlexProps } from "../../Box";
 import Flex from "../../Box/Flex";
 import Dropdown from "../../Dropdown/Dropdown";
-import Link from "../../Link/Link";
 import IconComponent from "../../Svg/IconComponent";
 import { socials } from "../config";
 
